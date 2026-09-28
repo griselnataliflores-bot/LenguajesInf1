@@ -1,0 +1,42 @@
+/* Variables */
+:root {
+    --color-fondo: #F4F1E8;
+    --color-texto: #263238;
+    --color-principal: #2F5D62;
+    --color-acento: #A66A2C;
+    --color-header-footer: #23474B;
+} 
+ 
+/*Reset Basico*/
+
+* { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+} 
+ 
+/* Tipografia Global y Body*/
+body { 
+    font-family: "Lora", serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+} 
+
+/* Headings */
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--color-header-footer);
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--color-principal);
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--color-acento);
+}
