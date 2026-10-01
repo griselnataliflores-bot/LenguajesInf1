@@ -17,26 +17,29 @@
  
 /* Tipografia Global y Body*/
 body { 
-    font-family: "Lora", serif;
-    font-size: 16px;
-    line-height: 1.6;
-    background-color: var(--color-fondo);
-    color: var(--color-texto);
-} 
+  font-family: "Lora", serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  max-width: 1100px; 
+  margin: 0 auto;    
+  padding: 0 1rem;
+}
 
 /* Headings */
 
 h1 {
-    font-size: 2.5rem;
-    color: var(--color-header-footer);
+  font-size: 2.5rem;
+  color: var(--color-header-footer);
 }
 
 h2 {
-    font-size: 2rem;
-    color: var(--color-principal);
+  font-size: 2rem;
+  color: var(--color-principal);
 }
 
 h3 {
-    font-size: 1.5rem;
-    color: var(--color-acento);
+  font-size: 1.5rem;
+  color: var(--color-acento);
 }
