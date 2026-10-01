@@ -43,3 +43,78 @@ h3 {
   font-size: 1.5rem;
   color: var(--color-acento);
 }
+
+/*  HEADER Y LOGO */
+header {
+  background-color: var(--color-header-footer);
+  padding: 1.5rem;
+  border-radius: 0 0 8px 8px;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.header-top h1 {
+  color: #FFFFFF;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+/* NAVEGACIÓN */
+nav {
+  margin-top: 1.5rem;
+}
+
+nav ul {
+  list-style: none; 
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--color-acento);
+}
+
+/* Contenedor que coloca los elementos lado a lado */
+.galeria-imagenes {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center; 
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap; 
+}
+
+/* Ajuste del contenedor de cada imagen */
+.galeria-imagenes figure {
+  margin: 0;
+  text-align: center;
+}
+
+/* Ajuste de la imagen */
+.galeria-imagenes img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
