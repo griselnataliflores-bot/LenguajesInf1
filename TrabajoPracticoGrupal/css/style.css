@@ -7,6 +7,9 @@
     --color-header-footer: #23474B;
 } 
  
+  --border-Imagen: 1px solid rgba(255, 255, 255, 0.2);
+  --border-radius: 8px;
+  --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 /*Reset Basico*/
 
 * { 
@@ -117,4 +120,30 @@ nav a:hover {
   max-width: 100%;
   height: auto;
   border-radius: 6px;
+}.Imagen-Lugares {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
 }
+
+.Imagen-Lugares figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0%;
+}
+
+.Imagen-Lugares img {
+  object-fit: cover;
+  border: var(--border-Imagen);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.Imagen-Lugares figcaption {
+  color: var(--color-principal);
+  font-weight: bold;
+}
+
