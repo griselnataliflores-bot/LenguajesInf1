@@ -5,11 +5,12 @@
     --color-principal: #2F5D62;
     --color-acento: #A66A2C;
     --color-header-footer: #23474B;
+    
+    --border-Imagen: 1px solid rgba(255, 255, 255, 0.2);
+    --border-radius: 8px;
+    --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 } 
- 
-  --border-Imagen: 1px solid rgba(255, 255, 255, 0.2);
-  --border-radius: 8px;
-  --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+
 /*Reset Basico*/
 
 * { 
