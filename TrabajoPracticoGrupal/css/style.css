@@ -121,6 +121,14 @@ nav a:hover {
   height: auto;
   border-radius: 6px;
 }.Imagen-Lugares {
+
+.Fecha-Lanzamiento {
+  color: black;
+  font-weight: bold;
+  transform: translate(-20px, 25px);
+}
+
+.Imagen-Lugares {
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -147,3 +155,7 @@ nav a:hover {
   font-weight: bold;
 }
 
+.Guia {
+  margin-top: 25px; /* Empuja todo el bloque de créditos bien abajo*/
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Una línea divisora*/
+}
