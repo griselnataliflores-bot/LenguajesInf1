@@ -1,29 +1,29 @@
 /* Variables */
 :root {
-    --color-fondo: #F4F1E8;
-    --color-texto: #263238;
-    --color-principal: #2F5D62;
-    --color-acento: #A66A2C;
-    --color-header-footer: #23474B;
-} 
- 
+  --color-fondo: #f4f1e8;
+  --color-texto: #263238;
+  --color-principal: #2f5d62;
+  --color-acento: #a66a2c;
+  --color-header-footer: #23474b;
+}
+
 /*Reset Basico*/
 
-* { 
-  box-sizing: border-box; 
-  margin: 0; 
-  padding: 0; 
-} 
- 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 /* Tipografia Global y Body*/
-body { 
+body {
   font-family: "Lora", serif;
   font-size: 16px;
   line-height: 1.6;
   background-color: var(--color-fondo);
   color: var(--color-texto);
-  max-width: 1100px; 
-  margin: 0 auto;    
+  max-width: 1100px;
+  margin: 0 auto;
   padding: 0 1rem;
 }
 
@@ -66,7 +66,7 @@ header {
 }
 
 .header-top h1 {
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0;
   position: absolute;
   left: 50%;
@@ -80,14 +80,14 @@ nav {
 }
 
 nav ul {
-  list-style: none; 
+  list-style: none;
   display: flex;
   justify-content: center;
   gap: 2rem;
 }
 
 nav a {
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
@@ -101,9 +101,9 @@ nav a:hover {
 .galeria-imagenes {
   display: flex;
   gap: 1.5rem;
-  justify-content: center; 
+  justify-content: center;
   margin-bottom: 1.5rem;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 /* Ajuste del contenedor de cada imagen */
@@ -117,4 +117,101 @@ nav a:hover {
   max-width: 100%;
   height: auto;
   border-radius: 6px;
+}
+
+/* ---  Footer --- */
+footer {
+  background-color: var(--color-header-footer);
+  color: #ffffff;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  border-radius: 8px 8px 0 0;
+}
+
+footer a {
+  color: var(--color-acento);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* --- Secciones, Artículos y Párrafos --- */
+main section {
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  background-color: #f0f4f7;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+main article {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e0dcd0;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* --- Imágenes generales, Tablas y Formulario --- */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Estilos para las tablas (usadas en lugares.html) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+td {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+/* Estilos para el formulario (usado en contacto.html) */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  margin-top: 1rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--color-principal);
+}
+
+button[type="submit"] {
+  background-color: var(--color-principal);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: inherit;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--color-header-footer);
 }
