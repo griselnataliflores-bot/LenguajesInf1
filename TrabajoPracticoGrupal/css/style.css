@@ -121,7 +121,14 @@ nav a:hover {
   max-width: 100%;
   height: auto;
   border-radius: 6px;
-}.Imagen-Lugares {
+}
+.Imagen-Lugares {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
 
 .Fecha-Lanzamiento {
   color: black;
