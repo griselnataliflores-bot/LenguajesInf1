@@ -237,3 +237,17 @@ button {
     font-weight: bold;
     font-size: 1.2rem;
 }
+
+/* Bootstrap - Personalización de botones */
+.btn-ciudad {
+    background-color: var(--color-principal);
+    color: #FFFFFF;
+    border: 1px solid var(--color-principal);
+    font-family: "Lora", serif;
+}
+
+.btn-ciudad:hover {
+    background-color: var(--color-header-footer);
+    color: #FFFFFF;
+    border-color: var(--color-header-footer);
+}
