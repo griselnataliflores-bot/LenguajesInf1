@@ -4,6 +4,7 @@
     --color-texto: #263238;
     --color-principal: #2F5D62;
     --color-acento: #A66A2C;
+    --color-acento-claro:#FFD89A;
     --color-header-footer: #23474B;
     
     --border-Imagen: 1px solid rgba(255, 255, 255, 0.2);
@@ -98,7 +99,7 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--color-acento);
+  color: var(--color-acento-claro);
 }
 
 /* Contenedor que coloca los elementos lado a lado */
@@ -208,7 +209,7 @@ button {
 }
 
 #contactanos a {
-    color:var(--color-acento);
+    color:var(--color-principal);
     text-decoration: underline;
     position: relative;
     left: 1rem;
