@@ -1,33 +1,106 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Ciudad Margarita - Inicio</title>
   </head>
   <body>
     <header>
       <div class="header-top">
-      <img src="Multimedia/Imagenes/LogoCM.jpg" alt="Logo de Ciudad Margarita" width="50" height="50">
-      <h1 id="Ciudad-Margarita">Ciudad Margarita</h1>
-    </div>
-      
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="ciudad.html">Ciudad</a></li>
-          <li><a href="lugares.html">Lugares</a></li>
-          <li><a href="actividades.html">Actividades</a></li>
-          <li><a href="contacto.html">Contacto</a></li>  
-        </ul>
+        <img
+          src="Multimedia/Imagenes/LogoCM.png"
+          alt="Logo de Ciudad Margarita"
+          width="50"
+          height="50"
+        />
+        <h1 id="Ciudad-Margarita">Ciudad Margarita</h1>
+      </div>
+      <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img
+              src="Multimedia/imagenes/logoCM.png"
+              alt="Logo"
+              width="100"
+              height="100"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="ciudad.html">Ciudad</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="lugares.html">Lugares</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Actividades.html">Actividades</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
-    <br>
+    <br />
     <main>
       <section id="inicio">
         <h2><strong>Bienvenido a Ciudad Margarita.</strong></h2>
@@ -37,125 +110,155 @@
           que hacen de ella un destino único. Descubre todo lo que esta
           maravillosa y enigmática ciudad tiene para ofrecer.
         </p>
-        <br>
+        <br />
         <div class="galeria-imagenes">
           <figure>
-              <img src="Multimedia/Imagenes/vista_panoramica.jpg" alt="Ciudad al amanecer" width="640" height="400">
-              <figcaption>
-                  Vista panorámica de Ciudad Margarita al amanecer
-              </figcaption>
+            <img
+              src="Multimedia/Imagenes/vista_panoramica.jpg"
+              alt="Ciudad al amanecer"
+              width="640"
+              height="400"
+            />
+            <figcaption>
+              Vista panorámica de Ciudad Margarita al amanecer
+            </figcaption>
           </figure>
         </div>
       </section>
-      <br>
+      <br />
 
-    <section id="la-ciudad">
+      <section id="la-ciudad">
         <h2>La Ciudad</h2>
-      <div class="galeria-imagenes">
-        <figure>
-          <img src="Multimedia/Imagenes/LaCiudad.jpg" alt="Calles con vista al mar" width="110" height="230">
-          <figcaption>Calles de Ciudad Margarita con vista al mar</figcaption>
-        </figure>
-        
-        <figure>
-          <img src="Multimedia/Imagenes/LaCiudad2.jpg" alt="Vista aerea de la costa" width="350" height="230">
-          <figcaption>Vista aérea de la costa de Ciudad Margarita</figcaption>
-        </figure>
-      </div>
+        <div class="galeria-imagenes">
+          <figure>
+            <img
+              src="Multimedia/Imagenes/LaCiudad.jpg"
+              alt="Calles con vista al mar"
+              width="110"
+              height="230"
+            />
+            <figcaption>Calles de Ciudad Margarita con vista al mar</figcaption>
+          </figure>
 
-      <p>
-        Ciudad Margarita es una ciudad costera rodeada de montañas, reconocida
-        por su patrimonio histórico, sus barrios tradicionales y una cultura
-        marcada por antiguas leyendas. Conoce su historia, cultura y
-        tradiciones en los principales atractivos de la ciudad.
-      </p>
+          <figure>
+            <img
+              src="Multimedia/Imagenes/LaCiudad2.jpg"
+              alt="Vista aerea de la costa"
+              width="350"
+              height="230"
+            />
+            <figcaption>Vista aérea de la costa de Ciudad Margarita</figcaption>
+          </figure>
+        </div>
+
+        <p>
+          Ciudad Margarita es una ciudad costera rodeada de montañas, reconocida
+          por su patrimonio histórico, sus barrios tradicionales y una cultura
+          marcada por antiguas leyendas. Conoce su historia, cultura y
+          tradiciones en los principales atractivos de la ciudad.
+        </p>
         <ul>
           <li>El Pueblo de Arkham</li>
           <li>Museo de Dunwich</li>
           <li>Puerto de Innsmouth</li>
         </ul>
-        <br>
-        <a href="ciudad.html" class="btn btn-ciudad">Conoce la Ciudad</a> 
-    </section>
-    <br>
+        <br />
+        <a href="ciudad.html" class="btn btn-ciudad">Conoce la Ciudad</a>
+      </section>
+      <br />
       <section id="donde-ir">
         <h2>Dónde Ir</h2>
-          <p>
-              Descubrí los lugares más emblemáticos de Ciudad Margarita,
-              donde la historia, la naturaleza y las leyendas se encuentran.
-            </p>
-            <p>
-              Recorré el Pueblo de Arkham, explorá los misterios del Museo
-              de Dunwich, conocé el Puerto de Innsmouth y disfrutá de las
-              vistas del Faro de Ragnar.
-            </p>
-        <br>
+        <p>
+          Descubrí los lugares más emblemáticos de Ciudad Margarita, donde la
+          historia, la naturaleza y las leyendas se encuentran.
+        </p>
+        <p>
+          Recorré el Pueblo de Arkham, explorá los misterios del Museo de
+          Dunwich, conocé el Puerto de Innsmouth y disfrutá de las vistas del
+          Faro de Ragnar.
+        </p>
+        <br />
         <div class="galeria-imagenes">
-        <figure>
-          <img src="Multimedia/Imagenes/DanzadeErichZann.jpeg" alt="Danza de Erich Zann" width="350" height="230">
-          <figcaption>Danza de Erich Zann</figcaption>
-        </figure>
-        <br>
+          <figure>
+            <img
+              src="Multimedia/Imagenes/DanzadeErichZann.jpeg"
+              alt="Danza de Erich Zann"
+              width="350"
+              height="230"
+            />
+            <figcaption>Danza de Erich Zann</figcaption>
+          </figure>
+          <br />
 
-        <figure>
-          <img src="Multimedia/Imagenes/FestivaldelMar.jpeg" alt="Festival del Mar" width="350" height="230">
-          <figcaption>Festival del Mar</figcaption>
-        </figure>
+          <figure>
+            <img
+              src="Multimedia/Imagenes/FestivaldelMar.jpeg"
+              alt="Festival del Mar"
+              width="350"
+              height="230"
+            />
+            <figcaption>Festival del Mar</figcaption>
+          </figure>
         </div>
-        <br>
+        <br />
         <ul>
           <li>Pueblo de Arkham y la Danza de Erich Zann</li>
           <li>Museo de Dunwich y sus Noches de Astronomía y Letras</li>
           <li>Puerto de Innsmouth y el Festival del Mar</li>
           <li>Faro de Ragnar y sus leyendas</li>
         </ul>
-        <br>
+        <br />
         <a href="lugares.html" class="btn btn-ciudad">Ver Lugares turísticos</a>
       </section>
-      <br>
+      <br />
       <section id="actividades">
         <h2>Actividades</h2>
-          <p>
-            Ciudad Margarita también invita a disfrutar de la naturaleza
-            y la aventura. En los alrededores del Monte Mailen, los
-            visitantes pueden recorrer senderos, realizar cabalgatas
-            y descubrir paisajes de montañas, bosques y lagunas.
-          </p>
+        <p>
+          Ciudad Margarita también invita a disfrutar de la naturaleza y la
+          aventura. En los alrededores del Monte Mailen, los visitantes pueden
+          recorrer senderos, realizar cabalgatas y descubrir paisajes de
+          montañas, bosques y lagunas.
+        </p>
 
-          <p>
-            Además, el Canal Mailen ofrece excursiones de navegación,
-            paseos por la Isla M y actividades acuáticas como kayak
-            y canoas.
-          </p>
-          <div class="galeria-imagenes">
-            <figure>
-                <img src="Multimedia/Imagenes/ZZA0816-684x1024.jpg" alt="Paisaje natural del Monte Mailen" width="350">
-                <figcaption>Monte Mailen</figcaption>
-            </figure>
-          </div>
-          <ul>
-            <li>Trekking por el Monte Mailen</li>
-            <li>Cabalgatas por los bosques</li>
-            <li>Navegación y caminatas por la Isla M</li>
-            <li>Kayak y canoas</li>
-          </ul>
+        <p>
+          Además, el Canal Mailen ofrece excursiones de navegación, paseos por
+          la Isla M y actividades acuáticas como kayak y canoas.
+        </p>
+        <div class="galeria-imagenes">
+          <figure>
+            <img
+              src="Multimedia/Imagenes/ZZA0816-684x1024.jpg"
+              alt="Paisaje natural del Monte Mailen"
+              width="350"
+            />
+            <figcaption>Monte Mailen</figcaption>
+          </figure>
+        </div>
+        <ul>
+          <li>Trekking por el Monte Mailen</li>
+          <li>Cabalgatas por los bosques</li>
+          <li>Navegación y caminatas por la Isla M</li>
+          <li>Kayak y canoas</li>
+        </ul>
 
         <a href="actividades.html" class="btn btn-ciudad">
           Explorar actividades
         </a>
       </section>
-      <br>
+      <br />
       <section id="contacto">
         <h2>Contacto</h2>
         <p>
           Encuentra toda la información de contacto para poder comunicarte y
           planificar tu visita.
         </p>
-        <br>
-        <a href="contacto.html" class="btn btn-ciudad">Ver información de contacto</a>
+        <br />
+        <a href="contacto.html" class="btn btn-ciudad"
+          >Ver información de contacto</a
+        >
       </section>
     </main>
-    <br>
+    <br />
     <footer>
       <p>Descubre, disfruta y vive la magia de Ciudad Margarita.</p>
       <address>
@@ -175,6 +278,5 @@
       <p>&copy; 2026 Ciudad Margarita.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
   </body>
 </html>
