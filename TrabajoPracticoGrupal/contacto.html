@@ -1,29 +1,104 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
     <title>Contacto - Ciudad Margarita</title>
-    
   </head>
   <body>
     <header>
       <div class="header-top">
-      <img src="Multimedia/Imagenes/LogoCM.jpg" alt="Logo de Ciudad Margarita" width="50" height="50">
-      <h1>Ciudad Margarita</h1>
+        <img
+          src="Multimedia/Imagenes/LogoCM.jpg"
+          alt="Logo de Ciudad Margarita"
+          width="50"
+          height="50"
+        />
+        <h1>Ciudad Margarita</h1>
       </div>
-      <nav>
-        <ul>
-          <li><a href="index.html" target="_blank">Inicio</a></li>
-          <li><a href="ciudad.html" target="_blank">Ciudad</a></li>
-          <li><a href="lugares.html" target="_blank">Lugares</a></li>
-          <li><a href="actividades.html" target="_blank">Actividades</a></li>
-          <li><a href="contacto.html" target="_blank">Contacto</a></li>
-        </ul>
+      <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img
+              src="Multimedia/imagenes/logoCM.png"
+              alt="Logo"
+              width="100"
+              height="100"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="ciudad.html">Ciudad</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="lugares.html">Lugares</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Actividades.html">Actividades</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -36,9 +111,15 @@
         </p>
 
         <article>
-          <img src="Multimedia/Imagenes/oficina.png" width="500" alt="Oficina de la Ciudad Margarita">
+          <img
+            src="Multimedia/Imagenes/oficina.png"
+            width="500"
+            alt="Oficina de la Ciudad Margarita"
+          />
           <figure>
-            <figcaption> Entrada principal de la ofina de ciudad margarita</figcaption>
+            <figcaption>
+              Entrada principal de la ofina de ciudad margarita
+            </figcaption>
           </figure>
           <h3>Oficina de turismo de la ciudad margarita</h3>
           <p>
@@ -73,55 +154,58 @@
       <section class="formulario">
         <h2>Envianos un mensaje</h2>
         <form action="/formulario" method="post">
-          <label for="Nombre">Nombre</label><br>
-          <input type="text" id="Nombre" name="Nombre" required>
-          <br>
-          <label for="email">Email</label> <br>
-          <input type="email" id="email" name="email" required>
-          <br>
-          <label for="Mensaje">Mensaje</label> <br>
-          <textarea cols="50" rows="10" id="Mensaje" name="Mensaje"  required ></textarea>
-          <br>
+          <label for="Nombre">Nombre</label><br />
+          <input type="text" id="Nombre" name="Nombre" required />
+          <br />
+          <label for="email">Email</label> <br />
+          <input type="email" id="email" name="email" required />
+          <br />
+          <label for="Mensaje">Mensaje</label> <br />
+          <textarea
+            cols="50"
+            rows="10"
+            id="Mensaje"
+            name="Mensaje"
+            required
+          ></textarea>
+          <br />
           <button type="submit">Enviar</button>
         </form>
-      
       </section>
-      <hr>
+      <hr />
       <section>
-          <h2>¿En qué podemos ayudarte?</h2>
-          <p>Podés comunicarte con nosotros para obtener información sobre:</p>
-          <ul>
-            <li>Lugares turísticos</li>
-            <li>Horarios de atención</li>
-            <li>Eventos culturales</li>
-            <li>Recomendaciones para visitantes</li>
-          </ul>
-     </section>
+        <h2>¿En qué podemos ayudarte?</h2>
+        <p>Podés comunicarte con nosotros para obtener información sobre:</p>
+        <ul>
+          <li>Lugares turísticos</li>
+          <li>Horarios de atención</li>
+          <li>Eventos culturales</li>
+          <li>Recomendaciones para visitantes</li>
+        </ul>
+      </section>
 
-      <hr>
+      <hr />
 
-     <section class="redes-sociales">
-       
-          <h2>Seguinos en nuestras redes sociales</h2>
-          <ul>
-            <li>
-              <a
-                href="https://www.facebook.com/ciudadmargarita"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Facebook</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/ciudadmargarita"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Instagram</a
-              >
-            </li>
-          </ul>
-        
+      <section class="redes-sociales">
+        <h2>Seguinos en nuestras redes sociales</h2>
+        <ul>
+          <li>
+            <a
+              href="https://www.facebook.com/ciudadmargarita"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/ciudadmargarita"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+          </li>
+        </ul>
       </section>
     </main>
 
@@ -129,5 +213,6 @@
       <p>Descubrí, disfrutá y viví la magia de Ciudad Margarita.</p>
       <p>&copy; 2026 Ciudad Margarita.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

@@ -1,30 +1,106 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
     <title>Sobre La Ciudad - Ciudad Margarita</title>
   </head>
 
   <body>
     <header>
       <div class="header-top">
-      <img src="Multimedia/Imagenes/LogoCM.jpg" alt="Logo de Ciudad Margarita" width="50" height="50">
-      <h1>Ciudad Margarita</h1>
+        <img
+          src="Multimedia/Imagenes/LogoCM.jpg"
+          alt="Logo de Ciudad Margarita"
+          width="50"
+          height="50"
+        />
+        <h1>Ciudad Margarita</h1>
       </div>
-      
-      <nav>
-        <ul>
-          <li><a href="index.html" target="_blank">Inicio</a></li>
-          <li><a href="ciudad.html" target="_blank">Ciudad</a></li>
-          <li><a href="lugares.html" target="_blank">Lugares</a></li>
-          <li><a href="actividades.html" target="_blank">Actividades</a></li>
-          <li><a href="contacto.html" target="_blank">Contacto</a></li> 
-        </ul>
+
+      <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img
+              src="Multimedia/imagenes/logoCM.png"
+              alt="Logo"
+              width="100"
+              height="100"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="ciudad.html">Ciudad</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="lugares.html">Lugares</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Actividades.html">Actividades</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -35,23 +111,24 @@
           src="Multimedia/Imagenes/ciudadAlAmanecer.jpg"
           alt="Ciudad al amanecer"
           width="640"
-          height="400">
-          <br>
-          <p>
+          height="400"
+        />
+        <br />
+        <p>
           Ciudad Margarita es una ciudad que fue fundada en el año
           <em>1501</em> después de <strong>una gran guerra</strong> que se dio
-          en la región por las distintas decisiones de los gobernantes y <br>
+          en la región por las distintas decisiones de los gobernantes y <br />
           <strong>al no llegar a un acuerdo</strong> se desncadeno el conflicto
           por las soberanías de los territorios de la región. En el año
           <em>1501</em> ingresaron <strong>mas de 3,000</strong> habitantes de
-          origen Ruso, <br>
+          origen Ruso, <br />
           siendo la segunda lengua y población extranjera más grande de la
           ciudad. Además, a lo largo de los años, llegaron habitantes
-          procedentes de distintos países de Europa, <br>
+          procedentes de distintos países de Europa, <br />
           aunque en menor cantidad <strong>emigraron</strong> a esta ciudad en
           busca de refugio y una nueva vida, ya que estaba alejado de la zona
           central de conflicto.
-        <br>
+          <br />
         </p>
         <p>
           Hoy se caracteriza por su patrimonio histórico, sus barrios
@@ -65,7 +142,7 @@
           La cultura de Ciudad Margarita es una <strong>mezcla</strong> de
           tradiciones locales y extranjeras, reflejando la diversidad de su
           población. Donde desde niños se les enseña la tradición de la ciudad.
-          <br>
+          <br />
           Donde destacan:
         </p>
         <ul>
@@ -75,7 +152,7 @@
         </ul>
         <p>
           donde cada año se celebran festivales para compartir la herencia
-          cultural. <br>
+          cultural. <br />
         </p>
 
         <aside>
@@ -124,8 +201,8 @@
         </dl>
       </section>
     </main>
-    <br>
-    <hr>
+    <br />
+    <hr />
     <footer>
       <p>&copy; 2026 Ciudad Margarita. Todos los derechos reservados.</p>
       <p><strong>Redes sociales:</strong></p>
@@ -137,5 +214,6 @@
         </li>
       </ul>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
