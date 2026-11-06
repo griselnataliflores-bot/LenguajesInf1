@@ -215,23 +215,23 @@ button {
 }
 /* Redes sociales*/
 
-.redes-sociales {
+#redes-sociales {
   text-align: center;
   margin: 1rem;
   padding: 1rem;
 }
 
-.redes-sociales ul {
+#redes-sociales ul {
   list-style: none;
   padding: 0;
 }
 
-.redes-sociales li {
+#redes-sociales li {
   display: inline;
   margin: 15px;
 }
 
-.redes-sociales a {
+#redes-sociales a {
   color: #40f;
   font-weight: bold;
   font-size: 1.2rem;
