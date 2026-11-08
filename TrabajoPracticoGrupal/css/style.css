@@ -178,7 +178,6 @@ nav a:hover {
 form input,
 form textarea {
   width: 100%;
-  height: 100%;
   padding: 1rem;
   margin-bottom: 15px;
   border: 1px solid #00f0;
@@ -256,4 +255,14 @@ button {
   margin-left: auto;
   margin-right: 0;
   background-color: transparent !important;
+}
+/*Bootstrop formulario*/
+.formulario .form-control:focus {
+    border-color: #108c9b;
+    box-shadow: 0 0 0 0.25rem #108c9b40;
+}
+.formulario .btn-primary:hover {
+    background-color: #09535c;
+    color: #fff;
+    transition: background-color 0.3s ease;
 }
