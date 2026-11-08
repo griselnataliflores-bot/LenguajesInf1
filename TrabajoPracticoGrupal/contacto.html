@@ -153,24 +153,29 @@
       </section>
       <section class="formulario">
         <h2>Envianos un mensaje</h2>
-        <form action="/formulario" method="post">
-          <label for="Nombre">Nombre</label><br />
-          <input type="text" id="Nombre" name="Nombre" required />
-          <br />
-          <label for="email">Email</label> <br />
-          <input type="email" id="email" name="email" required />
-          <br />
-          <label for="Mensaje">Mensaje</label> <br />
-          <textarea
-            cols="50"
-            rows="10"
-            id="Mensaje"
-            name="Mensaje"
-            required
-          ></textarea>
-          <br />
-          <button type="submit">Enviar</button>
-        </form>
+        <div class="container mt-3 contenedor-fijo ">
+          <form action="/formulario" method="post">
+          <div class="mb-3">
+            <label class="form-label" for="Nombre">Nombre</label>
+            <input class="form-control" type="text" id="Nombre" name="Nombre" required />
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="email">Email</label> 
+            <input class="form-control" type="email" id="email" name="email" required />
+          </div>
+            
+            <div class="mb-4">
+              <label class="form-label" for="Mensaje">Mensaje</label> 
+              <textarea class="form-control " 
+                rows="5"
+                id="Mensaje"
+                name="Mensaje"
+                required 
+                ></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Enviar</button>
+          </form>
+        </div>
       </section>
       <hr />
       <section class="p-4 mb-5 rounded border shadow-lg">
