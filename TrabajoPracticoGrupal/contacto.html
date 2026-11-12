@@ -20,18 +20,13 @@
   <body>
     <header>
       <div class="header-top">
-        <img
-          src="Multimedia/Imagenes/LogoCM.jpg"
-          alt="Logo de Ciudad Margarita"
-          width="50"
-          height="50"
-        />
         <h1 id="Ciudad-Margarita">Ciudad Margarita</h1>
       </div>
-      <nav class="navbar bg-body-tertiary fixed-top">
+      <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"
             ><img
+              class="logo"
               src="Multimedia/imagenes/logoCM.png"
               alt="Logo"
               width="100"
@@ -79,10 +74,33 @@
                   <a class="nav-link" href="lugares.html">Lugares</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="Actividades.html">Actividades</a>
+                  <a class="nav-link" href="actividades.html">Actividades</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Informacion
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Policia</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Bomberos</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Hospitales</a>
+                    </li>
+                  </ul>
                 </li>
               </ul>
               <form class="d-flex mt-3" role="search">
@@ -93,7 +111,7 @@
                   aria-label="Search"
                 />
                 <button class="btn btn-outline-success" type="submit">
-                  Search
+                  Buscar
                 </button>
               </form>
             </div>
@@ -153,25 +171,38 @@
       </section>
       <section class="formulario">
         <h2>Envianos un mensaje</h2>
-        <div class="container mt-3 contenedor-fijo ">
+        <div class="container mt-3 contenedor-fijo">
           <form action="/formulario" method="post">
-          <div class="mb-3">
-            <label class="form-label" for="Nombre">Nombre</label>
-            <input class="form-control" type="text" id="Nombre" name="Nombre" required />
-          </div>
-          <div class="mb-3">
-            <label class="form-label" for="email">Email</label> 
-            <input class="form-control" type="email" id="email" name="email" required />
-          </div>
-            
+            <div class="mb-3">
+              <label class="form-label" for="Nombre">Nombre</label>
+              <input
+                class="form-control"
+                type="text"
+                id="Nombre"
+                name="Nombre"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="email">Email</label>
+              <input
+                class="form-control"
+                type="email"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
+
             <div class="mb-4">
-              <label class="form-label" for="Mensaje">Mensaje</label> 
-              <textarea class="form-control " 
+              <label class="form-label" for="Mensaje">Mensaje</label>
+              <textarea
+                class="form-control"
                 rows="5"
                 id="Mensaje"
                 name="Mensaje"
-                required 
-                ></textarea>
+                required
+              ></textarea>
             </div>
             <button class="btn btn-primary" type="submit">Enviar</button>
           </form>

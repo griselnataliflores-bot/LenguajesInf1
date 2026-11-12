@@ -52,7 +52,7 @@ h3 {
 /*  HEADER Y LOGO */
 header {
   background-color: var(--color-header-footer);
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 0 0 8px 8px;
 }
 
@@ -61,11 +61,12 @@ header {
   align-items: center;
   justify-content: space-between;
   position: relative;
+  min-height: 3rem;
 }
 
 .logo {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -75,10 +76,13 @@ header {
   margin: 0;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  top: 100%;
+  transform: translate(-50%, -50%);
   text-align: center;
+  width: 70%;
+  font-size: 50px;
+  line-height: 1.2;
 }
-
 /* NAVEGACIÓN */
 nav {
   margin-top: 1.5rem;
@@ -258,11 +262,47 @@ button {
 }
 /*Bootstrop formulario*/
 .formulario .form-control:focus {
-    border-color: #108c9b;
-    box-shadow: 0 0 0 0.25rem #108c9b40;
+  border-color: #108c9b;
+  box-shadow: 0 0 0 0.25rem #108c9b40;
 }
 .formulario .btn-primary:hover {
-    background-color: #09535c;
-    color: #fff;
-    transition: background-color 0.3s ease;
+  background-color: #09535c;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+p {
+  margin-top: 20px;
+}
+
+/* Un hover: zoom en las imaganes al pasar el mouse */
+
+.imagenes-con-hover {
+  transition: transform 0.3s ease;
+  cursor: default;
+  object-fit: cover;
+  border: var(--border-Imagen);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.imagenes-con-hover:hover {
+  transform: scale(1.05);
+  cursor: zoom-in;
+}
+
+/* que no aparesca la lupita al pasar el cursor*/
+imagenes-con-hover,
+img:hover,
+img:active {
+  cursor: default !important;
+}
+
+/* El logo no tiene Hover*/
+
+.logo {
+  position: static;
+
+  transform: none !important;
+  cursor: default;
 }

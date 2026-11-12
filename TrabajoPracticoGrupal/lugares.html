@@ -27,14 +27,13 @@
   <body>
     <header>
       <div class="header-top">
-      <img src="Multimedia/Imagenes/LogoCM.jpg" alt="Logo de Ciudad Margarita" width="50" height="50">
       <!--Titulo de inicio-->
         <h1 id="Ciudad-Margarita">Ciudad Margarita Turismo</h1>
       </div>
-       <nav class="navbar bg-body-tertiary fixed-top">
+       <nav class="navbar bg-body-tertiary ">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"
-            ><img
+            ><img class="logo"
               src="Multimedia/imagenes/logoCM.png"
               alt="Logo"
               width="100"
@@ -82,13 +81,26 @@
                   <a class="nav-link" href="lugares.html">Lugares</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="Actividades.html">Actividades</a>
+                  <a class="nav-link" href="actividades.html">Actividades</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="contacto.html">Contacto</a>
                 </li>
-              </ul>
-              <form class="d-flex mt-3" role="search">
+              <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Informacion
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Monumentos</a></li>
+              <li><a class="dropdown-item" href="#">Museo</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Eventos</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex mt-3" role="search">
                 <input
                   class="form-control me-2"
                   type="search"
@@ -96,7 +108,7 @@
                   aria-label="Search"
                 />
                 <button class="btn btn-outline-success" type="submit">
-                  Search
+                  Buscar
                 </button>
               </form>
             </div>

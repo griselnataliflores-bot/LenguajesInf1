@@ -18,14 +18,14 @@
   <body>
     <header>
       <div class="header-top">
-      <img src="Multimedia/Imagenes/LogoCM.jpg" alt="Logo de Ciudad Margarita" width="50" height="50">
+  
       <h1 id="Ciudad-Margarita">Actividades para vivir la Naturaleza</h1>
       </div>
       
-       <nav class="navbar bg-body-tertiary fixed-top">
+       <nav class="navbar bg-body-tertiary ">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"
-            ><img
+            ><img class="logo"
               src="Multimedia/imagenes/logoCM.png"
               alt="Logo"
               width="100"
@@ -73,13 +73,26 @@
                   <a class="nav-link" href="lugares.html">Lugares</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="Actividades.html">Actividades</a>
+                  <a class="nav-link" href="actividades.html">Actividades</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="contacto.html">Contacto</a>
                 </li>
-              </ul>
-              <form class="d-flex mt-3" role="search">
+              <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Informacion
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Recreacion</a></li>
+              <li><a class="dropdown-item" href="#">Parques</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Planea tus vacaciones</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex mt-3" role="search">
                 <input
                   class="form-control me-2"
                   type="search"
@@ -87,7 +100,7 @@
                   aria-label="Search"
                 />
                 <button class="btn btn-outline-success" type="submit">
-                  Search
+                  Buscar
                 </button>
               </form>
             </div>
@@ -98,8 +111,8 @@
 
     <main>
       <section class="p-4 mb-5 rounded border shadow-lg">
-        <h2>Ven a al Monte Mailen a disfrutar al máximo la naturaleza</h2>
-        <img src="Multimedia/Imagenes/ZZA0816-684x1024.jpg" alt="Monte Mailen" width="530" height="450">
+        <h2>Ven al Monte Mailen a disfrutar al máximo la naturaleza</h2>
+        <img img class="imagenes-con-hover" src="Multimedia/Imagenes/ZZA0816-684x1024.jpg" alt="Monte Mailen" width="530" height="450">
         <p>
           <strong>Margarita</strong> ofrece una gran diversidad de actividades de contacto con la
           naturaleza: senderismo con la posibilidad de conocer lagunas de
@@ -115,7 +128,7 @@
 
         <article>
         <h3>Trekking</h3>
-        <img src="Multimedia/Imagenes/Trekking.jpg" alt="caminata por la paisaje" width="400" height="226">
+        <img class="imagenes-con-hover" src="Multimedia/Imagenes/Trekking.jpg" alt="caminata por la paisaje" width="400" height="226">
         <p>
           Recorre los paisajes que ofrece y conectate con la naturaleza. Es
           indudable que el <strong>Monte Mailen</strong> es un lugar 
@@ -129,7 +142,7 @@
 
          <article>
         <h3>Cabalgatas</h3>
-        <img src="Multimedia/Imagenes/cabalgatas.jfif" alt="cabalgata por el paisaje" width="400" height="225">
+        <img class="imagenes-con-hover" src="Multimedia/Imagenes/cabalgatas.jfif" alt="cabalgata por el paisaje" width="400" height="225">
         <p>
           Realizar una cabalgata es una oportunidad para adentrarte en los
           rincones del bosque margarino, disfrutar de un paseo tranquilo o
@@ -143,7 +156,7 @@
 
         <article>
         <h3>Navegacion y caminata por la isla M</h3>
-        <img src="Multimedia/Imagenes/Navegacion.jfif" alt="barco sobre agua" width="400" height="225">
+        <img class="imagenes-con-hover" src="Multimedia/Imagenes/Navegacion.jfif" alt="barco sobre agua" width="400" height="225">
         <p>
           Esta excursión te permite acercarte un poco más a las maravillas del
           <Strong>Canal Mailen</strong>. Se trata de un recorrido por las islas en embarcaciones
@@ -156,7 +169,7 @@
 
          <article>  
         <h3>Kayak y canoas</h3>
-        <img src="Multimedia/Imagenes/kayak.jpg" alt="gente en kayk y canoas" width="400" height="225">
+        <img class="imagenes-con-hover" src="Multimedia/Imagenes/kayak.jpg" alt="gente en kayk y canoas" width="400" height="225">
         <p>
           Margarita te ofrece la posibilidad de navegar por sus ríos, lagos y
           hasta en el <strong>Canal Mailen</strong> a remo. En kayak o canoas, esta actividad te
