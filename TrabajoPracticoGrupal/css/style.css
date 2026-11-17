@@ -360,3 +360,29 @@ body.oscuro {
   color: rgb(20, 153, 131);
   transition: 0.3s;
 }
+/* estilo de grilla responsiva de características de ciudad */
+section ol .card {
+  background-color: #f4f1e8;
+  color: #263238;
+  border: 1px solid #cbd8ce;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Lora", serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Efecto hover */
+section ol .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.18);
+  border-color: #2f5d62;
+}
+
+/* Lista */
+section ol {
+  padding-left: 2rem;
+}
