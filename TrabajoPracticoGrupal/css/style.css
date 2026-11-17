@@ -289,23 +289,25 @@ p {
 
 .imagenes-con-hover:hover {
   transform: scale(1.05);
-  cursor: zoom-in;
+  cursor: default;
 }
 
 /* que no aparesca la lupita al pasar el cursor*/
 imagenes-con-hover,
 img:hover,
 img:active {
-  cursor: default !important;
+  cursor: default;
 }
 
 /* El logo no tiene Hover*/
 
-.logo {
-  position: static;
+.logo:hover {
+  color: blue;
+  cursor: pointer;
+}
 
-  transform: none !important;
-  cursor: default;
+div p Recordatorio {
+  color: white;
 }
 
 /*Modo oscuro*/
