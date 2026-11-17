@@ -331,3 +331,27 @@ body.oscuro {
   border-radius: var(--border-radius);
   cursor: pointer;
 }
+
+.accordion-body {
+  background-color: #f4f1e8;
+  color: #263238;
+  padding: 25px;
+  line-height: 1.7;
+}
+
+.accordion-body strong {
+  color: #2f5d62;
+}
+
+.accordion-body a {
+  color: #a66a2c;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.accordion-body a:hover {
+  text-decoration: underline;
+}
+.accordion-button {
+  font-size: 1.3rem;
+}
