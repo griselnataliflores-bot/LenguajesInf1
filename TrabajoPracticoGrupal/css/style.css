@@ -355,3 +355,8 @@ body.oscuro {
 .accordion-button {
   font-size: 1.3rem;
 }
+
+.accordion-button:hover {
+  color: rgb(20, 153, 131);
+  transition: 0.3s;
+}
