@@ -386,3 +386,14 @@ section ol .card:hover {
 section ol {
   padding-left: 2rem;
 }
+
+/*Mensaje de alerta del formulario*/
+#mensaje-form.exito {
+    color: green;
+    font-weight: bold;
+}
+#mensaje-form.error {
+    color: red;
+    font-weight: bold;
+
+}
