@@ -13,9 +13,9 @@ const mensajeForm = document.getElementById("mensaje-form");
 formulario.addEventListener("submit", (event) => {
     event.preventDefault();
     
-    const nombreIngresado = Nombre.value.trim();
+    const nombreIngresado = nombre.value.trim();
     const emailIngresado = email.value.trim();
-    const textoIngresado = Mensaje.value.trim();
+    const textoIngresado = mensaje.value.trim();
 
     mensajeForm.classList.remove("error", "exito");
     
