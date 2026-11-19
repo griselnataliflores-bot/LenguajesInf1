@@ -292,22 +292,12 @@ p {
   cursor: default;
 }
 
-/* que no aparesca la lupita al pasar el cursor*/
-imagenes-con-hover,
-img:hover,
-img:active {
-  cursor: default;
-}
 
 /* El logo no tiene Hover*/
 
 .logo:hover {
   color: blue;
   cursor: pointer;
-}
-
-div p Recordatorio {
-  color: white;
 }
 
 /*Modo oscuro*/
