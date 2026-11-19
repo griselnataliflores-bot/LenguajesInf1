@@ -143,31 +143,39 @@ nav a:hover {
 }
 
 .Imagen-Lugares {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
   gap: 20px;
-  justify-content: center;
+  justify-items: center;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .Imagen-Lugares figure {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0%;
+  margin: 0;
+  width: 100%;
 }
 
 .Imagen-Lugares img {
+  width: 100%;
+  aspect-ratio: 4 / 3; /* Mantiene todas las fotos con la misma proporción */
   object-fit: cover;
   border: var(--border-Imagen);
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
+  box-sizing: border-box;
 }
 
 .Imagen-Lugares figcaption {
   color: var(--color-principal);
   font-weight: bold;
+  margin-top: 8px;
+  text-align: center;
 }
+
 
 .Guia {
   margin-top: 25px; /* Empuja todo el bloque de créditos bien abajo*/
@@ -285,6 +293,8 @@ p {
   border: var(--border-Imagen);
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
+  max-width: 100%;
+  height: auto;
 }
 
 .imagenes-con-hover:hover {
