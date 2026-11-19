@@ -118,7 +118,6 @@
             </div>
           </div>
         </div>
-        <button id="btn-modo">🌙🌙 Modo oscuro</button>
       </nav>
     </header>
     <br />
@@ -132,78 +131,104 @@
           maravillosa y enigmática ciudad tiene para ofrecer.
         </p>
         <br />
+        <div class="galeria-imagenes">
+          <figure>
+            <img
+              src="Multimedia/Imagenes/vista_panoramica.jpg"
+              alt="Ciudad al amanecer"
+              width="640"
+              height="400"
+            />
+            <figcaption>
+              Vista panorámica de Ciudad Margarita al amanecer
+            </figcaption>
+          </figure>
+        </div>
       </section>
       <br />
 
       <section id="la-ciudad" class="p-4 mb-5 rounded border shadow-lg">
-        <div class="container-fluid">
-          <!-- Título y presentación -->
-          <div class="row">
-            <div class="col-12">
-              <h2>La Ciudad</h2>
-              <p>
-                Ciudad Margarita es una ciudad costera rodeada de montañas,
-                reconocida por su patrimonio histórico, sus barrios
-                tradicionales y una cultura marcada por antiguas leyendas.
-                Conoce su historia, cultura y tradiciones en los principales
-                atractivos de la ciudad.
-              </p>
-            </div>
-          </div>
+        <h2>La Ciudad</h2>
+        <div class="galeria-imagenes">
+          <figure>
+            <img
+              src="Multimedia/Imagenes/LaCiudad.jpg"
+              alt="Calles con vista al mar"
+              width="110"
+              height="230"
+            />
+            <figcaption>Calles de Ciudad Margarita con vista al mar</figcaption>
+          </figure>
 
-          <!-- Galería de imágenes -->
-          <div class="row g-4 my-2">
-            <div class="col-12 col-md-6">
-              <figure>
-                <img
-                  src="Multimedia/Imagenes/LaCiudad.jpg"
-                  alt="Calles con vista al mar"
-                  class="img-fluid"
-                />
-                <figcaption>
-                  Calles de Ciudad Margarita con vista al mar
-                </figcaption>
-              </figure>
-            </div>
-
-            <div class="col-12 col-md-6">
-              <figure>
-                <img
-                  src="Multimedia/Imagenes/LaCiudad2.jpg"
-                  alt="Vista aérea de la costa"
-                  class="img-fluid"
-                />
-                <figcaption>
-                  Vista aérea de la costa de Ciudad Margarita
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-
-          <!-- Información adicional -->
-          <div class="row mt-3">
-            <div class="col-12 col-md-8">
-              <h3>Conocé sus principales atractivos</h3>
-              <p>
-                Descubrí los lugares más representativos de Ciudad Margarita.
-              </p>
-            </div>
-
-            <div class="col-12 col-md-4">
-              <ul>
-                <li>El Pueblo de Arkham</li>
-                <li>Museo de Dunwich</li>
-                <li>Puerto de Innsmouth</li>
-              </ul>
-            </div>
-
-            <div class="col-12">
-              <a href="ciudad.html" class="btn btn-ciudad">
-                Conoce la Ciudad
-              </a>
-            </div>
-          </div>
+          <figure>
+            <img
+              src="Multimedia/Imagenes/LaCiudad2.jpg"
+              alt="Vista aerea de la costa"
+              width="350"
+              height="230"
+            />
+            <figcaption>Vista aérea de la costa de Ciudad Margarita</figcaption>
+          </figure>
         </div>
+
+        <p>
+          Ciudad Margarita es una ciudad costera rodeada de montañas, reconocida
+          por su patrimonio histórico, sus barrios tradicionales y una cultura
+          marcada por antiguas leyendas. Conoce su historia, cultura y
+          tradiciones en los principales atractivos de la ciudad.
+        </p>
+        <ul>
+          <li>El Pueblo de Arkham</li>
+          <li>Museo de Dunwich</li>
+          <li>Puerto de Innsmouth</li>
+        </ul>
+        <br />
+        <a href="ciudad.html" class="btn btn-ciudad">Conoce la Ciudad</a>
+      </section>
+      <br />
+      <section id="donde-ir" class="p-4 mb-5 rounded border shadow-lg">
+        <h2>Dónde Ir</h2>
+        <p>
+          Descubrí los lugares más emblemáticos de Ciudad Margarita, donde la
+          historia, la naturaleza y las leyendas se encuentran.
+        </p>
+        <p>
+          Recorré el Pueblo de Arkham, explorá los misterios del Museo de
+          Dunwich, conocé el Puerto de Innsmouth y disfrutá de las vistas del
+          Faro de Ragnar.
+        </p>
+        <br />
+        <div class="galeria-imagenes">
+          <figure>
+            <img
+              src="Multimedia/Imagenes/DanzadeErichZann.jpeg"
+              alt="Danza de Erich Zann"
+              width="350"
+              height="230"
+            />
+            <figcaption>Danza de Erich Zann</figcaption>
+          </figure>
+          <br />
+
+          <figure>
+            <img
+              src="Multimedia/Imagenes/FestivaldelMar.jpeg"
+              alt="Festival del Mar"
+              width="350"
+              height="230"
+            />
+            <figcaption>Festival del Mar</figcaption>
+          </figure>
+        </div>
+        <br />
+        <ul>
+          <li>Pueblo de Arkham y la Danza de Erich Zann</li>
+          <li>Museo de Dunwich y sus Noches de Astronomía y Letras</li>
+          <li>Puerto de Innsmouth y el Festival del Mar</li>
+          <li>Faro de Ragnar y sus leyendas</li>
+        </ul>
+        <br />
+        <a href="lugares.html" class="btn btn-ciudad">Ver Lugares turísticos</a>
       </section>
       <br />
       <section id="actividades" class="p-4 mb-5 rounded border shadow-lg">
@@ -257,7 +282,6 @@
       </section>
     </main>
     <br />
-
     <footer>
       <div
         class="container p-4 my-2 rounded bg-dark border border-warning shadow text-white-50"
@@ -284,3 +308,4 @@
     <script src="js/main.js"></script>
   </body>
 </html>
+
